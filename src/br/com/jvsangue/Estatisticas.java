@@ -2,14 +2,14 @@ package br.com.jvsangue;
 
 import java.util.Scanner;
 
-public class Estatisticas {
+public class Estatisticas extends BancoEstatisticas {
 	
-	static void mostraEstatistica() {
+	public static void mostraEstatistica() {
 		
 		Scanner input = new Scanner(System.in);
 		
+		mostraEstGerais();
+		
 		input.close();
 	}
-	
-	
 }
