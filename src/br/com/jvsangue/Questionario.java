@@ -27,7 +27,7 @@ public class Questionario {
 	public void questionarioMasc() {
 		System.out.println("Doou sangue nos últimos 2 meses? \n 1- Sim 2- Não ");
 		intervalo = leia.nextInt();
-		if (intervalo == 1) {
+		if (intervalo == 2) {
 			questionarioPermanente();
 		}
 		else {
@@ -45,9 +45,18 @@ public class Questionario {
 	}
 
 	public void questionarioFem() {
+	
+		System.out.println("Você está em período gestacional?  \\n 1- Sim 2- Não");
+		gravidez = leia.nextInt();
+		if (gravidez == 1) { 
+			System.out.println("Você não está apta a realizar a doação devido estar em período gestacional. Deseja continuar respondendo o questionário ?  \n 1- Sim 2- Não");
+			continua = leia.nextInt();
+		}
+		
+		
 		System.out.println("Doou sangue nos últimos 3 meses? \n 1- Sim 2- Não ");
 		intervalo = leia.nextInt();
-		if (intervalo == 1) {
+		if (intervalo == 2) {
 			questionarioPermanente();
 		}
 		else {
@@ -55,18 +64,13 @@ public class Questionario {
 					+ "Deseja continuar respondendo o questionário? \n 1- Sim 2- Não ");
 			continua = leia.nextInt();
 			if (continua == 1) {
-				System.out.println("Está em período gestacional? \n 1- Sim 2- Não ");
-				gravidez = leia.nextInt();
-				if (gravidez == 1) {
-					System.out.println("Você não está apta a realizar a doação. Devido a estar em período gestacional.");
-				}
+				questionarioPermanente();
 			}
 			else {
 				//MenuInicial.menu(); Colocar método menu inicial.
 
 			}
-		}
-		}
+	
 		public void questionarioPermanente() {
 
 		}
