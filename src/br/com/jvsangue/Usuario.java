@@ -1,12 +1,14 @@
 package br.com.jvsangue;
 
 public class Usuario {
-	
+
 	private String nome;
 	private int idade;
 	private long cpf;
 	private String endereco;
 	private String regiao;
+	private String usuario;
+	private String senha;
 	
 	public String getNome() {
 		return nome;
@@ -38,8 +40,18 @@ public class Usuario {
 	public void setRegiao(String regiao) {
 		this.regiao = regiao;
 	}
-	
-	
+	public String getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 
-
+	
 }
