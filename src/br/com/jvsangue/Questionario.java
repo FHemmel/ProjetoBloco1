@@ -11,6 +11,10 @@ public class Questionario {
 	private int periodo;
 	private int parto;
 	private int idade;
+	private int doouAnteriormente;
+	private double peso;
+	private int doencasPermanentes;
+	
 
 
 
@@ -84,14 +88,40 @@ public class Questionario {
 				//metodo menu iniciar
 			}
 			questionarioPermanente();
-			}
-		}
-
-
-		public void questionarioPermanente() {
-			System.out.println("Qual a sua idade? ");
-			idade = leia.nextInt();
-			
-
 		}
 	}
+
+
+	public void questionarioPermanente() {
+		System.out.println("Qual a sua idade? ");
+		idade = leia.nextInt();
+		if (idade < 16 && idade > 69 ) {
+			System.out.println("A faixa de idade apta a realizar a doação é de 16 a 69 anos. Infelizmente você não está apte a realizar a doação.");
+			//metodo menu iniciar
+		}
+		if (idade >= 60 && idade <= 69) {
+			System.out.println("Você já doou sangue anteriormente? \n 1 - Sim 2 - Não");	
+			doouAnteriormente = leia.nextInt();
+			if(doouAnteriormente == 2) {
+				System.out.println("Infelizmente você não está apte a realizar a doação. ");
+				//metodo menu iniciar
+			}
+		}
+		System.out.println("Qual o seu peso? ");
+		peso = leia.nextDouble();
+		if (peso < 50) {
+			System.out.println("Para realizar a doação precisa ter 50kg ou mais. Infelizmente você não está apte a realizar a doação.");
+			//metodo menuiniciar
+		}
+		System.out.println("Você teve hepatite após os 11 anos ou evidência das seguintes doenças hepatite B e C, AIDS doenças associadas ao vírus HTLV I e II e Doença de chagas?"
+				+ "\n Fez uso de drogas ilícitas injetáveis? \n Teve malária? \n Tem piercing em cavidade oral ou região genital?"
+				+ "\n Caso afirmativo para qualquer uma das perguntas acima digite 1. ");
+		doencasPermanentes = leia.nextInt();		
+		if (doencasPermanentes == 1) {
+			System.out.println("Infelizmente você não poderá realizar a doação de sangue.");
+		}
+		//metodoTemporario
+	}
+
+}
+
