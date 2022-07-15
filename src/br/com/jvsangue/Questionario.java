@@ -14,6 +14,7 @@ public class Questionario {
 	private int doouAnteriormente;
 	private double peso;
 	private int doencasPermanentes;
+	private int p1,p2,p3,p4,p5,p7;
 	
 
 
@@ -21,7 +22,7 @@ public class Questionario {
 	Scanner leia =  new Scanner(System.in);
 
 	public void realizarQuestionario() {
-		System.out.println("Qual o seu gênero? \n 1 - Feminino, 2- Masculino, 3- Prefiro não informar. ");
+		System.out.println("Qual o seu gï¿½nero? \n 1 - Feminino, 2- Masculino, 3- Prefiro nï¿½o informar. ");
 		genero = leia.nextInt();
 		if (genero == 1 || genero == 3) {
 
@@ -33,14 +34,14 @@ public class Questionario {
 	}
 
 	public void questionarioMasc() {
-		System.out.println("Doou sangue nos últimos 2 meses? \n 1- Sim 2- Não ");
+		System.out.println("Doou sangue nos ï¿½ltimos 2 meses? \n 1- Sim 2- Nï¿½o ");
 		intervalo = leia.nextInt();
 		if (intervalo == 2) {
 			questionarioPermanente();
 		}
 		else {
-			System.out.println("Para homens o intervalo mínimo para realizar doação de sangue é de 2 meses. Infelizmente você não está apto a realizar a doação."
-					+ "Deseja continuar respondendo o questionário? \n 1- Sim 2- Não ");
+			System.out.println("Para homens o intervalo mï¿½nimo para realizar doaï¿½ï¿½o de sangue ï¿½ de 2 meses. Infelizmente vocï¿½ nï¿½o estï¿½ apto a realizar a doaï¿½ï¿½o."
+					+ "Deseja continuar respondendo o questionï¿½rio? \n 1- Sim 2- Nï¿½o ");
 			continua = leia.nextInt();
 			if (continua == 2) {
 				//menuiniciar metodo
@@ -52,25 +53,25 @@ public class Questionario {
 
 	public void questionarioFem() {
 
-		System.out.println("Você está em período gestacional?  \\n 1- Sim 2- Não");
+		System.out.println("Vocï¿½ estï¿½ em perï¿½odo gestacional?  \\n 1- Sim 2- Nï¿½o");
 		gravidez = leia.nextInt();
 		if (gravidez == 1) { 
-			System.out.println("Você não está apta a realizar a doação devido estar em período gestacional. Deseja continuar respondendo o questionário ?  \n 1- Sim 2- Não");
+			System.out.println("Vocï¿½ nï¿½o estï¿½ apta a realizar a doaï¿½ï¿½o devido estar em perï¿½odo gestacional. Deseja continuar respondendo o questionï¿½rio ?  \n 1- Sim 2- Nï¿½o");
 			continua = leia.nextInt();
 			if (continua == 2) {
 				//metodo menu inicial
 			}
 		}
-		System.out.println("Você esteve em período gestacional nos últimos 12 meses? \\n 1- Sim 2- Não");
+		System.out.println("Vocï¿½ esteve em perï¿½odo gestacional nos ï¿½ltimos 12 meses? \\n 1- Sim 2- Nï¿½o");
 		periodo = leia.nextInt();
 		if (periodo == 1) {
-			System.out.println("Caso tenha sido parto normal você deve aguardar 90 dias e 180 dias para cesariana e"
-					+ "\n caso esteja amamentando deve aguardar 12 meses após o parto para estar apta a realizar a doação, você se enquadra nestes requisitos?"
-					+ "\n  1- Sim 2- Não");
+			System.out.println("Caso tenha sido parto normal vocï¿½ deve aguardar 90 dias e 180 dias para cesariana e"
+					+ "\n caso esteja amamentando deve aguardar 12 meses apï¿½s o parto para estar apta a realizar a doaï¿½ï¿½o, vocï¿½ se enquadra nestes requisitos?"
+					+ "\n  1- Sim 2- Nï¿½o");
 			parto = leia.nextInt();		
 			if (parto == 1) {
-				System.out.println("Infelizmente você não está apta a realizar a doação no momento."
-						+ " \n Deseja continuar respondendo? 1 - Sim 2 - Não");
+				System.out.println("Infelizmente vocï¿½ nï¿½o estï¿½ apta a realizar a doaï¿½ï¿½o no momento."
+						+ " \n Deseja continuar respondendo? 1 - Sim 2 - Nï¿½o");
 				continua = leia.nextInt();	
 				if (continua == 2) {
 					//metodo menu iniciar}
@@ -78,11 +79,11 @@ public class Questionario {
 			}
 		}
 
-		System.out.println("Doou sangue nos últimos 3 meses? \n 1- Sim 2- Não ");
+		System.out.println("Doou sangue nos ï¿½ltimos 3 meses? \n 1- Sim 2- Nï¿½o ");
 		intervalo = leia.nextInt();
 		if (intervalo == 1) {
-			System.out.println("Para mulheres o intervalo mínimo para realizar doação de sangue é de 3 meses. Infelizmente você não está apta a realizar a doação."
-					+ "Deseja continuar respondendo o questionário? \n 1- Sim 2- Não ");
+			System.out.println("Para mulheres o intervalo mï¿½nimo para realizar doaï¿½ï¿½o de sangue ï¿½ de 3 meses. Infelizmente vocï¿½ nï¿½o estï¿½ apta a realizar a doaï¿½ï¿½o."
+					+ "Deseja continuar respondendo o questionï¿½rio? \n 1- Sim 2- Nï¿½o ");
 			continua = leia.nextInt();
 			if(continua == 2) {
 				//metodo menu iniciar
@@ -96,32 +97,98 @@ public class Questionario {
 		System.out.println("Qual a sua idade? ");
 		idade = leia.nextInt();
 		if (idade < 16 && idade > 69 ) {
-			System.out.println("A faixa de idade apta a realizar a doação é de 16 a 69 anos. Infelizmente você não está apte a realizar a doação.");
+			System.out.println("A faixa de idade apta a realizar a doaï¿½ï¿½o ï¿½ de 16 a 69 anos. Infelizmente vocï¿½ nï¿½o estï¿½ apte a realizar a doaï¿½ï¿½o.");
 			//metodo menu iniciar
 		}
 		if (idade >= 60 && idade <= 69) {
-			System.out.println("Você já doou sangue anteriormente? \n 1 - Sim 2 - Não");	
+			System.out.println("Vocï¿½ jï¿½ doou sangue anteriormente? \n 1 - Sim 2 - Nï¿½o");	
 			doouAnteriormente = leia.nextInt();
 			if(doouAnteriormente == 2) {
-				System.out.println("Infelizmente você não está apte a realizar a doação. ");
+				System.out.println("Infelizmente vocï¿½ nï¿½o estï¿½ apte a realizar a doaï¿½ï¿½o. ");
 				//metodo menu iniciar
 			}
 		}
 		System.out.println("Qual o seu peso? ");
 		peso = leia.nextDouble();
 		if (peso < 50) {
-			System.out.println("Para realizar a doação precisa ter 50kg ou mais. Infelizmente você não está apte a realizar a doação.");
+			System.out.println("Para realizar a doaï¿½ï¿½o precisa ter 50kg ou mais. Infelizmente vocï¿½ nï¿½o estï¿½ apte a realizar a doaï¿½ï¿½o.");
 			//metodo menuiniciar
 		}
-		System.out.println("Você teve hepatite após os 11 anos ou evidência das seguintes doenças hepatite B e C, AIDS doenças associadas ao vírus HTLV I e II e Doença de chagas?"
-				+ "\n Fez uso de drogas ilícitas injetáveis? \n Teve malária? \n Tem piercing em cavidade oral ou região genital?"
+		System.out.println("Vocï¿½ teve hepatite apï¿½s os 11 anos ou evidï¿½ncia das seguintes doenï¿½as hepatite B e C, AIDS doenï¿½as associadas ao vï¿½rus HTLV I e II e Doenï¿½a de chagas?"
+				+ "\n Fez uso de drogas ilï¿½citas injetï¿½veis? \n Teve malï¿½ria? \n Tem piercing em cavidade oral ou regiï¿½o genital?"
 				+ "\n Caso afirmativo para qualquer uma das perguntas acima digite 1. ");
 		doencasPermanentes = leia.nextInt();		
 		if (doencasPermanentes == 1) {
-			System.out.println("Infelizmente você não poderá realizar a doação de sangue.");
+			System.out.println("Infelizmente vocï¿½ nï¿½o poderï¿½ realizar a doaï¿½ï¿½o de sangue.");
 		}
-		//metodoTemporario
+		questionarioTemporario();
 	}
-
+	public void questionarioTemporario() {
+		p1();
+		p2();
+		p3();
+		p4();
+		p5();
+		p7();
+		resultado();
+	}
+	
+	public void p1() {
+		System.out.println("VocÃª precisou de transfusÃ£o de sangue ou foi exposto a situaÃ§Ãµes de risco acrescido para infecÃ§Ãµes sexualmente transmissÃ­veis ou VocÃª fez tatuagem e/ou piercing nos Ãºltimos 12 meses? \n 1 - Sim \n2 - Nï¿½o");
+		p1=leia.nextInt();
+		}
+	public void p2() {
+		System.out.println("VocÃª teve alguma dessas doenÃ§as nos Ãºltimos 6 meses: Colecistectomia, histerectomia, nefrectomia, reduÃ§Ã£o de fraturas, politraumatismos sem seqÃ¼elas graves, tireoidectomia, colectomia ou Passou por exames ou procedimentos que houve a utilizaÃ§Ã£o de endoscÃ³pio ? \n 1 - Sim \n2 - Nï¿½o");
+		p2=leia.nextInt();
+		
+	}
+	public void p3() {
+		System.out.println("VocÃª teve alguma dessas doenÃ§as nos Ãºltimos 3 meses:  apendicite, hÃ©rnia, amigdalectomia, varizes? \n 1 - Sim \n2 - NÃ£o ");
+		p3=leia.nextInt();
+		
+	}
+	public void p4() {
+		System.out.println("Teve Gripe, resfriado e febre nos Ãºltimos 7 dias?\n 1 - Sim \n2 - NÃ£o");
+		p4=leia.nextInt();
+	}
+	public void p5() {
+		System.out.println("VocÃª fez ExtraÃ§Ã£o dentÃ¡ria nas Ãºltimas 72 horas? \n 1 - Sim \n2 - NÃ£o");
+		p5=leia.nextInt();
+	}
+	public void p7() {
+		System.out.println("Tomou vacina nos Ãºltimos 7 dias? \n 1 - Sim \n2 - NÃ£o");
+		p7=leia.nextInt();
+	}
+	public void resultado() {
+		System.out.println("================================================================");
+		System.out.println("                           RESULTADOS                           ");
+		System.out.println("================================================================");
+		System.out.println("Nome: "+/*nome+*/"| Idade: "+idade+"| GÃªnero: "+genero+"| Peso: "+peso+"kg");
+		avisos();
+		
+	}
+	
+	public void avisos() {
+		if(p1==1) {
+			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doaÃ§Ã£o");
+		}
+		if(p2==1) {
+			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doaÃ§Ã£o");
+		}
+		if(p3==1) {
+			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doaÃ§Ã£o");
+		}
+		if(p4==1) {
+			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doaÃ§Ã£o");
+		}
+		if(p5==1) {
+			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doaÃ§Ã£o");
+		}
+		if(p7==1) {
+			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doaÃ§Ã£o");
+		}
+		if(p1==2 && p2==2 && p3==2 && p4==21 && p5==2 && p7==2) {
+			System.out.println("PARABÃ‰NS VOCÃŠ ESTÃ APTX PARA FAZER A DOAÃ‡ÃƒO DE SANGUE");
+		}
+	}
 }
-
