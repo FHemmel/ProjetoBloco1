@@ -8,7 +8,12 @@ public class Estatisticas extends BancoEstatisticas {
 		
 		Scanner input = new Scanner(System.in);
 		
-		// getName de Cadastro
+		Usuario usu = new Usuario();
+		
+		System.out.println("Olá, " + usu.getNome() + "! Aqui estão algumas estatísticas sobre doação de sangue."
+						+ "\nAo final você terá a opção de saber mais sobre seu tipo sanguíneo. Vamos lá? ");
+		
+		System.out.println();
 		
 		mostraEstGerais();
 		
@@ -67,7 +72,7 @@ public class Estatisticas extends BancoEstatisticas {
 		
 		switch (opcao2) {
 		case '1':
-			// retorna ao menu inicial
+			MenuInicial.menu();
 			break;
 		case '2':
 			System.out.println("Você saiu do programa.");
