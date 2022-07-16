@@ -22,10 +22,10 @@ public class Cadastro {
 		usu.setCpf(leia.nextLong());
 				
 		System.out.print("\nDigite seu endereço: ");
-		usu.setEndereco(leia.nextLine());
+		usu.setEndereco(leia.next());
 				
 		System.out.print("\nDigite a região onde mora: ");
-		usu.setRegiao(leia.nextLine());
+		usu.setRegiao(leia.next());
 		
 	leia.close();	
 	}
