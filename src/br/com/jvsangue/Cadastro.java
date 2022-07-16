@@ -21,11 +21,11 @@ public class Cadastro {
 		System.out.print("\nDigite seu CPF: ");
 		usu.setCpf(leia.nextLong());
 				
-		System.out.print("\nDigite seu endereÁo: ");
+		System.out.print("\nDigite seu endere√ßo: ");
 		usu.setEndereco(leia.next());
 				
-		System.out.print("\nDigite a regi„o onde mora: ");
-		usu.setRegiao(leia.next());
+		System.out.print("\nDigite a regi√£o onde mora: ");
+		usu.setRegiao(leia.nextInt());
 		
 		usu.getRegiao();
 		
