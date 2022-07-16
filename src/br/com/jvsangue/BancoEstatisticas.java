@@ -5,80 +5,80 @@ public class BancoEstatisticas {
 
 	public static void mostraEstGerais() {
 		System.out.println("========================================================");
-		System.out.println("==ESTATÍSTICAS GERAIS SOBRE DOAÇÃO DE SANGUE NO BRASIL==");
+		System.out.println("==ESTATÃ�STICAS GERAIS SOBRE DOAÃ‡ÃƒO DE SANGUE NO BRASIL==");
 		System.out.println("========================================================");
 		System.out.println();
 		
-		System.out.println("Você sabia que uma doação de sangue pode salvar até 4 vidas? "
-				+ "\nAlém de ajudar pessoas que precisam de sangue para procedimentos e intervenções médicas, "
-				+ "\nvocê também ajuda pessoas com doenças crônicas graves que precisam de transfusões recorrentes.");
+		System.out.println("VocÃª sabia que uma doaÃ§Ã£o de sangue pode salvar atÃ© 4 vidas? "
+				+ "\nAlÃ©m de ajudar pessoas que precisam de sangue para procedimentos e intervenÃ§Ãµes mÃ©dicas, "
+				+ "\nvocÃª tambÃ©m ajuda pessoas com doenÃ§as crÃ´nicas graves que precisam de transfusÃµes recorrentes.");
 		
 		System.out.println();
-		System.out.println("Além disso, uma pessoa adulta tem em média 5 litros de sangue e em cada doação o "
-				+ "\nmáximo de sangue retirado é de 450ml.\r\n");
+		System.out.println("AlÃ©m disso, uma pessoa adulta tem em mÃ©dia 5 litros de sangue e em cada doaÃ§Ã£o o "
+				+ "\nmÃ¡ximo de sangue retirado Ã© de 450ml.");
 		
 		System.out.println();
 		System.out.println("Mas infelizmente... menos de 2% dos brasileiros doam sangue.");
 		
 		System.out.println();
-		System.out.println("Segundo uma pesquisa mundial feita pela farmacêutica Abbott,"
-				+ "\n o motivo das pessoas não doarem é não saberem como doar e terem medo do procedimento.");
+		System.out.println("Segundo uma pesquisa mundial feita pela farmacÃªutica Abbott,"
+				+ "\n o motivo das pessoas nÃ£o doarem Ã© nÃ£o saberem como doar e terem medo do procedimento.");
 		
 		System.out.println();
-		System.out.println("Como você chegou até aqui, significa que quer doar e com certeza tem amigos e "
-				+ "\nfamiliares aptos a doarem também, então espalhe esse programa para o máximo de pessoas que puder!");
+		System.out.println("Como vocÃª chegou atÃ© aqui, significa que quer doar e com certeza tem amigos e "
+				+ "\nfamiliares aptos a doarem tambÃ©m, entÃ£o espalhe esse programa para o mÃ¡ximo de pessoas que puder!");
 	}
 	
 	public static void mostraAPositivo() {
-		System.out.println("Você pode doar para pessoas com sangue AB+ e A+, e pode receber sangue de pessoas A+, A-, O+ e O-. "
-				+ "\nDe acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue A+ está ESTÁVEL no momento, ufa! "
-				+ "\nMas não significa que ficará assim para sempre, então responda nosso questionário para saber se você pode ser doador.");
+		System.out.println("VocÃª pode doar para pessoas com sangue AB+ e A+, e pode receber sangue de pessoas A+, A-, O+ e O-. "
+				+ "\nDe acordo com o hemocentro PrÃ³-Sangue de SÃ£o Paulo, o estoque de sangue A+ estÃ¡ ESTÃ�VEL no momento, ufa! "
+				+ "\nMas nÃ£o significa que ficarÃ¡ assim para sempre, entÃ£o responda nosso questionÃ¡rio para saber se vocÃª pode ser doador.");
 	}
 	
 	
 	public static void mostraANegativo() {
-		System.out.println("Você pode doar para pessoas com sangue A+, A-, AB+ e AB-, e pode receber sangue "
-                + "\nde pessoas A- e O-. De acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue "
-                + "\nA- está EM ALERTA, então que tal responder o questionário para saber se você pode doar?");
+		System.out.println("VocÃª pode doar para pessoas com sangue A+, A-, AB+ e AB-, e pode receber sangue "
+                + "\nde pessoas A- e O-. De acordo com o hemocentro PrÃ³-Sangue de SÃ£o Paulo, o estoque de sangue "
+                + "\nA- estÃ¡ EM ALERTA, entÃ£o que tal responder o questionÃ¡rio para saber se vocÃª pode doar?");
 	}
 	
 	public static void mostraBPositivo() {
-		System.out.println("Você pode doar para pessoas com sangue B+ e AB+, e pode receber sangue de pessoas "
-                + "\nB+, B-, O+ e O-. De acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue B+ "
-                + "\nestá ESTÁVEL no momento, ufa! Mas não significa que ficará assim para sempre, então responda "
-                + "\nnosso questionário para saber se você pode ser doador.");
+		System.out.println("VocÃª pode doar para pessoas com sangue B+ e AB+, e pode receber sangue de pessoas "
+                + "\nB+, B-, O+ e O-. De acordo com o hemocentro PrÃ³-Sangue de SÃ£o Paulo, o estoque de sangue B+ "
+                + "\nestÃ¡ ESTÃ�VEL no momento, ufa! Mas nÃ£o significa que ficarÃ¡ assim para sempre, entÃ£o responda "
+                + "\nnosso questionÃ¡rio para saber se vocÃª pode ser doador.");
 	}
 	
 	public static void mostraBNegativo() {
-		System.out.println("Você pode doar para pessoas com sangue B+, B-, AB+ e AB-, e pode receber de pessoas "
-                + "\nB- e O-. De acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue B- está "
-                + "\nEM ESTADO CRÍTICO, portanto vamos agilizar seu questionário para que você possa saber se pode doar!");
+		System.out.println("VocÃª pode doar para pessoas com sangue B+, B-, AB+ e AB-, e pode receber de pessoas "
+                + "\nB- e O-. De acordo com o hemocentro PrÃ³-Sangue de SÃ£o Paulo, o estoque de sangue B- estÃ¡ "
+                + "\nEM ESTADO CRÃ�TICO, portanto vamos agilizar seu questionÃ¡rio para que vocÃª possa saber se pode doar!");
 	}
 	
 	public static void mostraABPositivo() {
-		System.out.println("Você só pode doar para pessoas com sangue AB+, mas pode receber de todos os outros "
-                + "\ntipos sanguíneos, por isso é conhecido como receptor universal. De acordo com o hemocentro "
-                + "\nPró-Sangue de São Paulo, o estoque de sangue AB+ está ESTÁVEL no momento, ufa! Mas não significa "
-                + "\nque ficará assim para sempre, então responda nosso questionário para saber se você pode ser doador.");
+		System.out.println("VocÃª sÃ³ pode doar para pessoas com sangue AB+, mas pode receber de todos os outros "
+                + "\ntipos sanguÃ­neos, por isso Ã© conhecido como receptor universal. De acordo com o hemocentro "
+                + "\nPrÃ³-Sangue de SÃ£o Paulo, o estoque de sangue AB+ estÃ¡ ESTÃ�VEL no momento, ufa! Mas nÃ£o significa "
+                + "\nque ficarÃ¡ assim para sempre, entÃ£o responda nosso questionÃ¡rio para saber se vocÃª pode ser doador.");
 	}
 	
 	public static void mostraABNegativo() {
-		System.out.println("Você pode doar para pessoas com sangue AB+ e AB-, e pode receber de pessoas "
-                + "\nA-, B-, O- e AB-. De acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue AB- está "
-                + "\nESTÁVEL no momento, ufa! Mas não significa que ficará assim para sempre, então responda nosso "
-                + "\nquestionário para saber se você pode ser doador.");
+		System.out.println("VocÃª pode doar para pessoas com sangue AB+ e AB-, e pode receber de pessoas "
+                + "\nA-, B-, O- e AB-. De acordo com o hemocentro PrÃ³-Sangue de SÃ£o Paulo, o estoque de sangue AB- estÃ¡ "
+                + "\nESTÃ�VEL no momento, ufa! Mas nÃ£o significa que ficarÃ¡ assim para sempre, entÃ£o responda nosso "
+                + "\nquestionÃ¡rio para saber se vocÃª pode ser doador.");
 	}
 	
 	public static void mostraOPositivo() {
-		System.out.println("Você pode doar para pessoas com sangue A+, B+, O+ e AB+, e pode receber de pessoas O+ e O-. "
-                + "\nDe acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue O+ está EM ESTADO CRÍTICO, "
-                + "\nportanto vamos agilizar seu questionário para que você possa saber se pode doar!");
+		System.out.println("VocÃª pode doar para pessoas com sangue A+, B+, O+ e AB+, e pode receber de pessoas O+ e O-. "
+                + "\nDe acordo com o hemocentro PrÃ³-Sangue de SÃ£o Paulo, o estoque de sangue O+ estÃ¡ EM ESTADO CRÃ�TICO, "
+                + "\nportanto vamos agilizar seu questionÃ¡rio para que vocÃª possa saber se pode doar!");
 	}
 	
 	public static void mostraONegativo() {
-		System.out.println("Você pode doar para pessoas com todos os tipos sanguíneos e é conhecido como doador universal,"
-                + "\nmas só pode receber de pessoas com sangue O-. De acordo com o hemocentro Pró-Sangue de São Paulo, o "
-                + "\nestoque de sangue O- está EM ESTADO CRÍTICO, portanto vamos agilizar seu questionário para que você "
+		System.out.println("VocÃª pode doar para pessoas com todos os tipos sanguÃ­neos e Ã© conhecido como doador universal,"
+                + "\nmas sÃ³ pode receber de pessoas com sangue O-. De acordo com o hemocentro PrÃ³-Sangue de SÃ£o Paulo, o "
+                + "\nestoque de sangue O- estÃ¡ EM ESTADO CRÃ�TICO, portanto vamos agilizar seu questionÃ¡rio para que vocÃª "
                 + "\npossa saber se pode doar!");
 	}
 	
