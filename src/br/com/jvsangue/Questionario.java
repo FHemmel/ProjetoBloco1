@@ -14,7 +14,7 @@ public class Questionario {
 	private int doouAnteriormente;
 	private double peso;
 	private int doencasPermanentes;
-	private int p1,p2,p3,p4,p5,p7;
+	private int p1,p2,p3,p4,p5,p7,ret;
 	
 
 
@@ -161,7 +161,7 @@ public class Questionario {
 	}
 	public void resultado() {
 		System.out.println("================================================================");
-		System.out.println("                           RESULTADOS                           ");
+		System.out.println("=                          RESULTADOS                          =");
 		System.out.println("================================================================");
 		System.out.println("Nome: "+/*nome+*/"| Idade: "+idade+"| Gênero: "+genero+"| Peso: "+peso+"kg");
 		avisos();
@@ -187,8 +187,39 @@ public class Questionario {
 		if(p7==1) {
 			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doação");
 		}
-		if(p1==2 && p2==2 && p3==2 && p4==21 && p5==2 && p7==2) {
+		if(p1==2 && p2==2 && p3==2 && p4==2 && p5==2 && p7==2) {
 			System.out.println("PARABÉNS VOCÊ ESTÁ APTX PARA FAZER A DOAÇÃO DE SANGUE");
+			regiao();
 		}
+	}
+	public void regiao() {
+		System.out.println("================================================================");
+		System.out.println("=                      PONTOS DE DOAÇÃO                        =");
+		System.out.println("================================================================");
+		if(Regiao==1) {
+			System.out.println("O hospital mais próximo de você para doação é o X");
+		}
+		if(Regiao==2) {
+			System.out.println("O hospital mais próximo de você para doação é o X");
+		}
+		if(Regiao==3) {
+			System.out.println("O hospital mais próximo de você para doação é o X");
+		}
+		if(Regiao==4) {
+			System.out.println("O hospital mais próximo de você para doação é o X");
+		}
+		if(Regiao==5) {
+			System.out.println("O hospital mais próximo de você para doação é o X");
+		}
+		System.out.println("Deseja retornar ao menu?\n 1 - Sim \n2 - Não");
+		ret=leia.nextInt();
+		if(ret==1) {
+			//menu
+		}
+		else {
+			System.out.println("Saindo do programa................");
+			break;
+		}
+		
 	}
 }
