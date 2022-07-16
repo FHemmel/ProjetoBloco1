@@ -44,7 +44,8 @@ public class Questionario {
 					+ "Deseja continuar respondendo o question�rio? \n 1- Sim 2- N�o ");
 			continua = leia.nextInt();
 			if (continua == 2) {
-				//menuiniciar metodo
+
+				MenuInicial.menu();
 			}
 			questionarioPermanente();
 		}
@@ -59,7 +60,8 @@ public class Questionario {
 			System.out.println("Voc� n�o est� apta a realizar a doa��o devido estar em per�odo gestacional. Deseja continuar respondendo o question�rio ?  \n 1- Sim 2- N�o");
 			continua = leia.nextInt();
 			if (continua == 2) {
-				//metodo menu inicial
+
+				MenuInicial.menu();
 			}
 		}
 		System.out.println("Voc� esteve em per�odo gestacional nos �ltimos 12 meses? \\n 1- Sim 2- N�o");
@@ -74,7 +76,8 @@ public class Questionario {
 						+ " \n Deseja continuar respondendo? 1 - Sim 2 - N�o");
 				continua = leia.nextInt();	
 				if (continua == 2) {
-					//metodo menu iniciar}
+
+					MenuInicial.menu();
 				}
 			}
 		}
@@ -86,7 +89,8 @@ public class Questionario {
 					+ "Deseja continuar respondendo o question�rio? \n 1- Sim 2- N�o ");
 			continua = leia.nextInt();
 			if(continua == 2) {
-				//metodo menu iniciar
+
+				MenuInicial.menu();
 			}
 			questionarioPermanente();
 		}
@@ -98,21 +102,24 @@ public class Questionario {
 		idade = leia.nextInt();
 		if (idade < 16 && idade > 69 ) {
 			System.out.println("A faixa de idade apta a realizar a doa��o � de 16 a 69 anos. Infelizmente voc� n�o est� apte a realizar a doa��o.");
-			//metodo menu iniciar
+
+			MenuInicial.menu();
 		}
 		if (idade >= 60 && idade <= 69) {
 			System.out.println("Voc� j� doou sangue anteriormente? \n 1 - Sim 2 - N�o");	
 			doouAnteriormente = leia.nextInt();
 			if(doouAnteriormente == 2) {
 				System.out.println("Infelizmente voc� n�o est� apte a realizar a doa��o. ");
-				//metodo menu iniciar
+				
+				MenuInicial.menu();
 			}
 		}
 		System.out.println("Qual o seu peso? ");
 		peso = leia.nextDouble();
 		if (peso < 50) {
 			System.out.println("Para realizar a doa��o precisa ter 50kg ou mais. Infelizmente voc� n�o est� apte a realizar a doa��o.");
-			//metodo menuiniciar
+			
+			MenuInicial.menu();
 		}
 		System.out.println("Voc� teve hepatite ap�s os 11 anos ou evid�ncia das seguintes doen�as hepatite B e C, AIDS doen�as associadas ao v�rus HTLV I e II e Doen�a de chagas?"
 				+ "\n Fez uso de drogas il�citas injet�veis? \n Teve mal�ria? \n Tem piercing em cavidade oral ou regi�o genital?"
@@ -163,7 +170,7 @@ public class Questionario {
 		System.out.println("================================================================");
 		System.out.println("=                          RESULTADOS                          =");
 		System.out.println("================================================================");
-		System.out.println("Nome: "+/*nome+*/"| Idade: "+idade+"| Gênero: "+genero+"| Peso: "+peso+"kg");
+		System.out.println("Nome: "+ usu.getNome + "| Idade: "+idade+"| Gênero: "+genero+"| Peso: "+peso+"kg");
 		avisos();
 		
 	}
@@ -192,20 +199,20 @@ public class Questionario {
 			regiao();
 		}
 	}
-	public void regiao() {
+	public void Regiao() {
 		System.out.println("================================================================");
 		System.out.println("=                      PONTOS DE DOAÇÃO                        =");
 		System.out.println("================================================================");
-		if(Regiao==1) {
+		if(regiao==1) {
 			System.out.println("O hospital mais próximo de você para doação é o X");
 		}
-		if(Regiao==2) {
+		if(regiao==2) {
 			System.out.println("O hospital mais próximo de você para doação é o X");
 		}
-		if(Regiao==3) {
+		if(regiao==3) {
 			System.out.println("O hospital mais próximo de você para doação é o X");
 		}
-		if(Regiao==4) {
+		if(regiao==4) {
 			System.out.println("O hospital mais próximo de você para doação é o X");
 		}
 		if(Regiao==5) {
@@ -214,7 +221,8 @@ public class Questionario {
 		System.out.println("Deseja retornar ao menu?\n 1 - Sim \n2 - Não");
 		ret=leia.nextInt();
 		if(ret==1) {
-			//menu
+			
+			MenuInicial.menu();
 		}
 		else {
 			System.out.println("Saindo do programa................");

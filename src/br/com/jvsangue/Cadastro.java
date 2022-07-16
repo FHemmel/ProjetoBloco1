@@ -27,6 +27,8 @@ public class Cadastro {
 		System.out.print("\nDigite a região onde mora: ");
 		usu.setRegiao(leia.next());
 		
+		usu.getRegiao();
+		
 	leia.close();	
 	}
 
