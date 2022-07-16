@@ -6,7 +6,7 @@ public class Usuario {
 	private int idade;
 	private long cpf;
 	private String endereco;
-	private String regiao;
+	private int regiao;
 	private String usuario;
 	private String senha;
 	
@@ -34,10 +34,10 @@ public class Usuario {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	public String getRegiao() {
+	public int getRegiao() {
 		return regiao;
 	}
-	public void setRegiao(String regiao) {
+	public void setRegiao(int regiao) {
 		this.regiao = regiao;
 	}
 	public String getUsuario() {
@@ -52,6 +52,5 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-
 	
 }
