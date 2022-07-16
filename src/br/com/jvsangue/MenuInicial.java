@@ -14,11 +14,11 @@ public class MenuInicial {
 	
 	int opcao = 0;
 		
-	System.out.print("\n  Por favor, selecione uma opÃ§Ã£o: "
+	System.out.print("\n  Por favor, selecione uma opção: "
 			+ "\n1) Login: \n"
 			+ "2) Criar conta: \n"
 			);
-	System.out.print("OpÃ§Ã£o selecionada: ");
+	System.out.print("Opção selecionada: ");
 	
 	opcao = leia.nextInt();
 	
