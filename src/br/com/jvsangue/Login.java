@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Login {
 
-	static void login() {
+	public static void login() {
 
 		String user = "admin";
 		String senha = "admin";
@@ -12,7 +12,7 @@ public class Login {
 
 		Scanner leia = new Scanner(System.in);
 
-		System.out.println("\nDigite seu usu·rio: ");
+		System.out.println("\nDigite seu usu√°rio: ");
 		user = leia.next(user);
 
 
@@ -22,21 +22,23 @@ public class Login {
 		if(user.equals(user) && senha.equals(senha)) {
 
 			System.out.println("=========================  Login efetuado com sucesso =========================");
-			System.out.println("\n  Por favor, selecione uma opÁ„o:\n"
-					+ "1) ComeÁar question·rio \n"
-					+ "2) Ver estatÌsticas\n"
+			System.out.println("\n  Por favor, selecione uma op√ß√£o:\n"
+					+ "1) Come√ßar question√°rio \n"
+					+ "2) Ver estat√≠sticas\n"
 					);
-			System.out.print("OpÁ„o selecionada: ");
+			System.out.print("Op√ß√£o selecionada: ");
 			opcao = leia.nextInt();
 
 			if(opcao == 1) {
-				//  Colocar metodo para ir ao question·rio
+				Questionario questionario = new Questionario();
+				questionario.realizarQuestionario();
+				
 			}else if (opcao == 2){
-				// Colocar metodo para ir ‡ estatisticas
+				Estatisticas.mostraEstatistica();
 			}
 
 		}else 
-			System.out.println("Usu·rio ou senha incorreta!");
+			System.out.println("Usu√°rio ou senha incorreta!");
 
 
 		leia.close();

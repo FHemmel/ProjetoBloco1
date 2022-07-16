@@ -10,8 +10,8 @@ public class Estatisticas extends BancoEstatisticas {
 		
 		Usuario usu = new Usuario();
 		
-		System.out.println("Olá, " + usu.getNome() + "! Aqui estão algumas estatísticas sobre doação de sangue."
-						+ "\nAo final você terá a opção de saber mais sobre seu tipo sanguíneo. Vamos lá? ");
+		System.out.println("OlÃ¡, " + usu.getNome() + "! Aqui estÃ£o algumas estatÃ­sticas sobre doaÃ§Ã£o de sangue."
+                + "\nAo final vocÃª terÃ¡ a opÃ§Ã£o de saber mais sobre seu tipo sanguÃ­neo. Vamos lÃ¡? ");
 		
 		System.out.println();
 		
@@ -19,7 +19,7 @@ public class Estatisticas extends BancoEstatisticas {
 		
 		System.out.println();
 		System.out.println("Agora vamos ver alguns dados sobre o seu sangue."
-						+ "\nPrimeiro, me diga qual seu tipo sanguíneo: ");
+                + "\nPrimeiro, me diga qual seu tipo sanguÃ­neo: ");
 		
 		System.out.println("(1) A+");
 		System.out.println("(2) A-");
@@ -29,7 +29,7 @@ public class Estatisticas extends BancoEstatisticas {
 		System.out.println("(6) AB-");
 		System.out.println("(7) O+");
 		System.out.println("(8) O-");
-		System.out.println("(9) Não sei");
+		System.out.println("(9) NÃ£o sei");
 		char opcao1 = input.next().charAt(0);
 		
 		switch(opcao1) {
@@ -58,16 +58,16 @@ public class Estatisticas extends BancoEstatisticas {
 			mostraONegativo();
 			break;
 		case '9':
-			System.out.println("Veja como você pode descobrir seu tipo sanguíneo de duas formas diferentes:"
-					+ "\n1) Faça um exame de sangue comum e peça para descobrir seu tipo sanguíneo;"
-					+ "\n2) Responda nosso questionário para descobrir se você está apto a dor sangue,"
-					+ "\npois ao doar você ficará sabendo qual seu tipo e ainda ganha um cartão de doador!");
+			System.out.println("Veja como vocÃª pode descobrir seu tipo sanguÃ­neo de duas formas diferentes:"
+                    + "\n1) FaÃ§a um exame de sangue comum e peÃ§a para descobrir seu tipo sanguÃ­neo;"
+                    + "\n2) Responda nosso questionÃ¡rio para descobrir se vocÃª estÃ¡ apto a dor sangue,"
+                    + "\npois ao doar vocÃª ficarÃ¡ sabendo qual seu tipo e ainda ganha um cartÃ£o de doador!");
 		}
 		
 		System.out.println();
 		System.out.println("Deseja retornar ao menu principal?");
 		System.out.println("(1) Sim");
-		System.out.println("(2) Não");
+		System.out.println("(2) NÃ£o");
 		char opcao2 = input.next().charAt(0);
 		
 		switch (opcao2) {
@@ -75,7 +75,7 @@ public class Estatisticas extends BancoEstatisticas {
 			MenuInicial.menu();
 			break;
 		case '2':
-			System.out.println("Você saiu do programa.");
+			System.out.println("VocÃª saiu do programa.");
 			System.exit(0);
 			break;
 		}
