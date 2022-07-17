@@ -65,13 +65,13 @@ private int genero, drogas, intervalo, continua, gravidez, periodo, parto, idade
 		periodo = leia.nextInt();
 		if (periodo == 1) {
 			System.out.println("Caso você tenha tido parto normal deve aguardar 90 dias \n"
-					+ "caso voê tenha tido parto cesariana deve aguardar 180 dias"
+					+ "caso você tenha tido parto cesariana deve aguardar 180 dias"
 					+ "\n caso esteja amamentando deve aguardar 12 meses após o parto para estar apta a realizar a doação. "
 					+ "\n você se enquadra nestes requisitos?"
 					+ "\n  1- Sim 2- Não");
 			parto = leia.nextInt();		
 			if (parto == 1) {
-				System.out.println("Infelizmente você não está apta a realizar a doação no momento."
+				System.out.println("Infelizmente você não está¡ apta a realizar a doação no momento."
 						+ " \n Deseja continuar respondendo? 1 - Sim 2 - Não");
 				continua = leia.nextInt();	
 				if (continua == 2) {
@@ -102,43 +102,43 @@ private int genero, drogas, intervalo, continua, gravidez, periodo, parto, idade
 		System.out.println("Qual a sua idade? ");
 		idade = leia.nextInt();
 		if (idade < 16 || idade > 69 ){
-			System.out.println("A faixa de idade apta a realizar a doaÃ§Ã£o Ã© de 16 a 69 anos. \nInfelizmente você não está apte a realizar a doação.");
+			System.out.println("A faixa de idade apta a realizar a doaÃƒÂ§ÃƒÂ£o ÃƒÂ© de 16 a 69 anos. \nInfelizmente vocÃª nÃ£o estÃ¡ apte a realizar a doaÃ§Ã£o.");
 			MenuInicial.menu();
 		}
 		else if (idade>=60 && idade<=69) {
-			System.out.println("Você já doou sangue anteriormente? \n 1 - Sim 2 - Não");	
+			System.out.println("VocÃª jÃ¡ doou sangue anteriormente? \n 1 - Sim 2 - NÃ£o");	
 			doouAnteriormente = leia.nextInt();
 			if(doouAnteriormente == 2) {
-				System.out.println("Infelizmente você não está apte a realizar a doação. ");
+				System.out.println("Infelizmente vocÃª nÃ£o estÃ¡ apte a realizar a doaÃ§Ã£o. ");
 				MenuInicial.menu();
 			}
 		}
 		System.out.println("Qual o seu peso? ");
 		peso = leia.nextDouble();
 		if (peso < 50.0) {
-			System.out.println("Para realizar a doação precisa ter 50kg ou mais. "
-					+ "\nInfelizmente você não está apte a realizar a doação.");
+			System.out.println("Para realizar a doaÃ§Ã£o precisa ter 50kg ou mais. "
+					+ "\nInfelizmente vocÃª nÃ£o estÃ¡ apte a realizar a doaÃ§Ã£o.");
 
 			MenuInicial.menu();
 		}
-		System.out.println("Você teve alguma dessas doenças listadas abaixo:"
-				+ "\n Hepatite após os 11 anos "
-				+ "\n Evidência de hepatite B e C"
-				+ "\n AIDS  ou doenças associadas ao vírus HTLV I e II "
-				+ "\n Doença de chagas"
-				+  "\n Malária"
-				+ "\n Caso afirmativo para qualquer uma das perguntas acima digite 1, caso não digite 2. ");
+		System.out.println("VocÃª teve alguma dessas doenÃ§as listadas abaixo:"
+				+ "\n Hepatite apÃ³s os 11 anos "
+				+ "\n EvidÃªncia de hepatite B e C"
+				+ "\n AIDS  ou doenÃ§as associadas ao vÃ­rus HTLV I e II "
+				+ "\n DoenÃ§a de chagas"
+				+  "\n MalÃ¡ria"
+				+ "\n Caso afirmativo para qualquer uma das perguntas acima digite 1, caso nÃ£o digite 2. ");
 		doencasPermanentes = leia.nextInt();		
 		if (doencasPermanentes == 1) {
-			System.out.println("Infelizmente vocÃª nÃ£o poderÃ¡ realizar a doação de sangue.");
+			System.out.println("Infelizmente vocÃƒÂª nÃƒÂ£o poderÃƒÂ¡ realizar a doaÃ§Ã£o de sangue.");
 			MenuInicial.menu();
 		}
-		System.out.println(" Você já fez uso de drogas ilícitas injetáveis? ou"
-				+ " \n Tem piercing em cavidade oral ou região genital?"
-				+ "\n Caso afirmativo para qualquer uma das perguntas acima digite 1, caso não digite 2.");
+		System.out.println(" VocÃª jÃ¡ fez uso de drogas ilÃ­citas injetÃ¡veis? ou"
+				+ " \n Tem piercing em cavidade oral ou regiÃ£o genital?"
+				+ "\n Caso afirmativo para qualquer uma das perguntas acima digite 1, caso nÃ£o digite 2.");
 		drogas = leia.nextInt();
 		if (drogas == 1) {
-			System.out.println("Infelizmente você não poderá realizar a doação de sangue.");
+			System.out.println("Infelizmente vocÃª nÃ£o poderÃ¡ realizar a doaÃ§Ã£o de sangue.");
 			MenuInicial.menu();
 		}
 		questionarioTemporario();
@@ -156,89 +156,89 @@ private int genero, drogas, intervalo, continua, gravidez, periodo, parto, idade
 	}
 	
 	public void p1() {
-		System.out.println("Você precisou de transfusão de sangue ou foi exposto a situações de risco acrescido para infecções sexualmente transmissíveis ou Você fez tatuagem e/ou piercing nos últimos 12 meses? \n 1 - Sim \n2 - Não");
+		System.out.println("VocÃª precisou de transfusÃ£o de sangue ou foi exposto a situaÃ§Ãµes de risco acrescido para infecÃ§Ãµes sexualmente transmissÃ­veis ou VocÃª fez tatuagem e/ou piercing nos Ãºltimos 12 meses? \n 1 - Sim \n2 - NÃ£o");
 		p1=leia.nextInt();
 		}
 	public void p2() {
-		System.out.println("Você teve alguma dessas doenças nos últimos 6 meses: Colecistectomia, histerectomia, nefrectomia, redução de fraturas, politraumatismos sem seqüelas graves, tireoidectomia, colectomia ou Passou por exames ou procedimentos que houve a utilização de endoscópio ? \n 1 - Sim \n2 - Não");
+		System.out.println("VocÃª teve alguma dessas doenÃ§as nos Ãºltimos 6 meses: Colecistectomia, histerectomia, nefrectomia, reduÃ§Ã£o de fraturas, politraumatismos sem seqÃ¼elas graves, tireoidectomia, colectomia ou Passou por exames ou procedimentos que houve a utilizaÃ§Ã£o de endoscÃ³pio ? \n 1 - Sim \n2 - NÃ£o");
 		p2=leia.nextInt();
 		
 	}
 	public void p3() {
-		System.out.println("Você teve alguma dessas doenças nos últimos 3 meses:  apendicite, hérnia, amigdalectomia, varizes? \n 1 - Sim \n2 - Não ");
+		System.out.println("VocÃª teve alguma dessas doenÃ§as nos Ãºltimos 3 meses:  apendicite, hÃ©rnia, amigdalectomia, varizes? \n 1 - Sim \n2 - NÃ£o ");
 		p3=leia.nextInt();
 		
 	}
 	public void p4() {
-		System.out.println("Teve Gripe, resfriado e febre nos últimos 7 dias?\n 1 - Sim \n2 - Não");
+		System.out.println("Teve Gripe, resfriado e febre nos Ãºltimos 7 dias?\n 1 - Sim \n2 - NÃ£o");
 		p4=leia.nextInt();
 	}
 	public void p5() {
-		System.out.println("Você fez Extração dentária nas últimas 72 horas? \n 1 - Sim \n2 - Não");
+		System.out.println("VocÃª fez ExtraÃ§Ã£o dentÃ¡ria nas Ãºltimas 72 horas? \n 1 - Sim \n2 - NÃ£o");
 		p5=leia.nextInt();
 	}
 	public void p7() {
-		System.out.println("Tomou vacina nos últimos 7 dias? \n 1 - Sim \n2 - Não");
+		System.out.println("Tomou vacina nos Ãºltimos 7 dias? \n 1 - Sim \n2 - NÃ£o");
 		p7=leia.nextInt();
 	}
 	public void resultado() {
 		System.out.println("================================================================");
 		System.out.println("=                          RESULTADOS                          =");
 		System.out.println("================================================================");
-		System.out.println("Nome: "+ usu.getNome() + "| Idade: "+idade+"| Gênero: "+genero+"| Peso: "+peso+"kg");
+		System.out.println("Nome: "+ usu.getNome() + "| Idade: "+idade+"| GÃªnero: "+genero+"| Peso: "+peso+"kg");
 		avisos();
 		
 	}
 	
 	public void avisos() {
 		if(p1==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 12 meses se completar para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 12 meses se completar para poder realizar sua doaÃ§Ã£o");
 		}
 		if(p2==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 6 meses se completar para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 6 meses se completar para poder realizar sua doaÃ§Ã£o");
 		}
 		if(p3==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 3 meses se completar para para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 3 meses se completar para para poder realizar sua doaÃ§Ã£o");
 		}
 		if(p4==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 7 dias se completar para para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 7 dias se completar para para poder realizar sua doaÃ§Ã£o");
 		}
 		if(p5==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 72 horas se completar para para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 72 horas se completar para para poder realizar sua doaÃ§Ã£o");
 		}
 		if(p7==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 7 dias se completar para para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 7 dias se completar para para poder realizar sua doaÃ§Ã£o");
 		}
 		if(p1==2 && p2==2 && p3==2 && p4==2 && p5==2 && p7==2) {
-			System.out.println("PARABÉNS VOCÊ ESTÁ APTX PARA FAZER A DOAÇÃO DE SANGUE");
+			System.out.println("PARABÃ‰NS VOCÃŠ ESTÃ� APTX PARA FAZER A DOAÃ‡ÃƒO DE SANGUE");
 		}
 		Regiao();
 	}
 	public void Regiao() {
 		System.out.println("================================================================");
-		System.out.println("=                      PONTOS DE DOAÇÃO                        =");
+		System.out.println("=                      PONTOS DE DOAÃ‡ÃƒO                        =");
 		System.out.println("================================================================");
-<<<<<<< HEAD
+
 		if(usu.getRegiao()==1) {
-			System.out.println("O hospital mais próximo de você para doação é o X");
-=======
+			System.out.println("O hospital mais prÃ³ximo de vocÃª para doaÃ§Ã£o Ã© o X");
+
 		if(usu.getRegiao() ==1) {
-			System.out.println("O hospital mais próximo de você para doação é :\n Hemocentro da Santa Casa de São Paulo- R. Marquês de Itu, 579 \n Banco de Sangue de São Paulo - R. Dr. Tomás Carvalhal, 711 \n Hospital das Clínicas da Universidade de São Paulo- Av. Dr. Enéas Carvalho de Aguiar, 155 ");
->>>>>>> d80ca2f04e15d881dcc0aa71f86fa1bac3051404
+			System.out.println("O hospital mais prÃ³ximo de vocÃª para doaÃ§Ã£o Ã© :\n Hemocentro da Santa Casa de SÃ£o Paulo- R. MarquÃªs de Itu, 579 \n Banco de Sangue de SÃ£o Paulo - R. Dr. TomÃ¡s Carvalhal, 711 \n Hospital das ClÃ­nicas da Universidade de SÃ£o Paulo- Av. Dr. EnÃ©as Carvalho de Aguiar, 155 ");
+
 		}
 		if(usu.getRegiao()==2) {
-			System.out.println("O hospital mais próximo de você para doação é :\n Conjunto Hospitalar do Mandaqui - R. Voluntários da Pátria, 4227 \n ");
+			System.out.println("O hospital mais prÃ³ximo de vocÃª para doaÃ§Ã£o Ã© :\n Conjunto Hospitalar do Mandaqui - R. VoluntÃ¡rios da PÃ¡tria, 4227 \n ");
 		}
 		if(usu.getRegiao()==3) {
-			System.out.println("O hospital mais próximo de você para doação é :\n Hospital Regional Dr Vivaldo Martins Simões-R. Ari Barroso, 355 \n Hospital Central Sorocabana - R. Faustolo, 1633 ");
+			System.out.println("O hospital mais prÃ³ximo de vocÃª para doaÃ§Ã£o Ã© :\n Hospital Regional Dr Vivaldo Martins SimÃµes-R. Ari Barroso, 355 \n Hospital Central Sorocabana - R. Faustolo, 1633 ");
 		}
 		if(usu.getRegiao()==4) {
-			System.out.println("O hospital mais próximo de você para doação é : \n Hemocentro HSP Unifesp -R. Dr. Diogo de Faria, 824 \n Banco de Sangue de São Paulo e Serviços de Hemoterapia- R. Dr. Alceu de Campos Rodrigues, 95 \n Banco de Sangue Paulista- R. Iguatinga, 382/386 \n Banco de Sangue - Unidade Einstein Morumbi - Av. Albert Einstein, 627 ");
+			System.out.println("O hospital mais prÃ³ximo de vocÃª para doaÃ§Ã£o Ã© : \n Hemocentro HSP Unifesp -R. Dr. Diogo de Faria, 824 \n Banco de Sangue de SÃ£o Paulo e ServiÃ§os de Hemoterapia- R. Dr. Alceu de Campos Rodrigues, 95 \n Banco de Sangue Paulista- R. Iguatinga, 382/386 \n Banco de Sangue - Unidade Einstein Morumbi - Av. Albert Einstein, 627 ");
 		}
 		if(usu.getRegiao()==5) {
-			System.out.println("O hospital mais próximo de você para doação é : \n Hospital Santa Marcelina -R. Harry Dannenberg ,473 \n Hospital Municipal do Tatuapé - Av. Celso Garcia, 4815 \n Hospital Municipal Professor Doutor Alípio Corrêa Netto- Alameda Rodrigo de Brum, 1989 ");
+			System.out.println("O hospital mais prÃ³ximo de vocÃª para doaÃ§Ã£o Ã© : \n Hospital Santa Marcelina -R. Harry Dannenberg ,473 \n Hospital Municipal do TatuapÃ© - Av. Celso Garcia, 4815 \n Hospital Municipal Professor Doutor AlÃ­pio CorrÃªa Netto- Alameda Rodrigo de Brum, 1989 ");
 		}
-		System.out.println("Deseja retornar ao menu?\n 1 - Sim \n2 - Não");
+		System.out.println("Deseja retornar ao menu?\n 1 - Sim \n2 - NÃ£o");
 		ret=leia.nextInt();
 		if(ret==1) {
 
@@ -249,4 +249,5 @@ private int genero, drogas, intervalo, continua, gravidez, periodo, parto, idade
 		}
 
 	}
+}
 }
