@@ -16,8 +16,8 @@ public class MenuInicial {
 		
 	System.out.print("\n  Por favor, selecione uma opção: "
 			+ "\n1) Login: \n"
-			+ "2) Criar conta: \n"
-			);
+			+ "2) Criar conta: \n");
+	
 	System.out.print("Opção selecionada: ");
 	
 	opcao = leia.nextInt();

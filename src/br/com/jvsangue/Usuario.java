@@ -5,6 +5,7 @@ public class Usuario {
 	private String nome;
 	private int idade;
 	private long cpf;
+	private String genero;
 	private String endereco;
 	private int regiao;
 	private String usuario;
@@ -51,6 +52,12 @@ public class Usuario {
 	}
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	public String getGenero() {
+		return genero;
+	}
+	public void setGenero(String genero) {
+		this.genero = genero;
 	}
 	
 }

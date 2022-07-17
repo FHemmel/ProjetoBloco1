@@ -206,7 +206,7 @@ public class Questionario extends Cadastro{
 		System.out.println("================================================================");
 		System.out.println("=                      PONTOS DE DOAÇÃO                        =");
 		System.out.println("================================================================");
-		if(usu.getRegiao() ==1) {
+		if(usu.getRegiao()==1) {
 			System.out.println("O hospital mais próximo de você para doação é o X");
 		}
 		if(usu.getRegiao()==2) {
