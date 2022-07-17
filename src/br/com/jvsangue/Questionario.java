@@ -192,56 +192,61 @@ private int genero, drogas, intervalo, continua, gravidez, periodo, parto, idade
 	
 	public void avisos() {
 		if(p1==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 12 meses se completar para poder realizar sua doação");
 		}
 		if(p2==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 6 meses se completar para poder realizar sua doação");
 		}
 		if(p3==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 3 meses se completar para para poder realizar sua doação");
 		}
 		if(p4==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 7 dias se completar para para poder realizar sua doação");
 		}
 		if(p5==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 72 horas se completar para para poder realizar sua doação");
 		}
 		if(p7==1) {
-			System.out.println("AVISO!!!!!!! \n Aguarde x para poder realizar sua doação");
+			System.out.println("AVISO!!!!!!! \n Aguarde o periodo de 7 dias se completar para para poder realizar sua doação");
 		}
 		if(p1==2 && p2==2 && p3==2 && p4==2 && p5==2 && p7==2) {
 			System.out.println("PARABÉNS VOCÊ ESTÁ APTX PARA FAZER A DOAÇÃO DE SANGUE");
-			Regiao();
 		}
+		Regiao();
 	}
 	public void Regiao() {
 		System.out.println("================================================================");
 		System.out.println("=                      PONTOS DE DOAÇÃO                        =");
 		System.out.println("================================================================");
-		if(usu.getRegiao() ==1) {
+<<<<<<< HEAD
+		if(usu.getRegiao()==1) {
 			System.out.println("O hospital mais próximo de você para doação é o X");
+=======
+		if(usu.getRegiao() ==1) {
+			System.out.println("O hospital mais próximo de você para doação é :\n Hemocentro da Santa Casa de São Paulo- R. Marquês de Itu, 579 \n Banco de Sangue de São Paulo - R. Dr. Tomás Carvalhal, 711 \n Hospital das Clínicas da Universidade de São Paulo- Av. Dr. Enéas Carvalho de Aguiar, 155 ");
+>>>>>>> d80ca2f04e15d881dcc0aa71f86fa1bac3051404
 		}
 		if(usu.getRegiao()==2) {
-			System.out.println("O hospital mais próximo de você para doação é o X");
+			System.out.println("O hospital mais próximo de você para doação é :\n Conjunto Hospitalar do Mandaqui - R. Voluntários da Pátria, 4227 \n ");
 		}
 		if(usu.getRegiao()==3) {
-			System.out.println("O hospital mais próximo de você para doação é o X");
+			System.out.println("O hospital mais próximo de você para doação é :\n Hospital Regional Dr Vivaldo Martins Simões-R. Ari Barroso, 355 \n Hospital Central Sorocabana - R. Faustolo, 1633 ");
 		}
 		if(usu.getRegiao()==4) {
-			System.out.println("O hospital mais próximo de você para doação é o X");
+			System.out.println("O hospital mais próximo de você para doação é : \n Hemocentro HSP Unifesp -R. Dr. Diogo de Faria, 824 \n Banco de Sangue de São Paulo e Serviços de Hemoterapia- R. Dr. Alceu de Campos Rodrigues, 95 \n Banco de Sangue Paulista- R. Iguatinga, 382/386 \n Banco de Sangue - Unidade Einstein Morumbi - Av. Albert Einstein, 627 ");
 		}
 		if(usu.getRegiao()==5) {
-			System.out.println("O hospital mais próximo de você para doação é o X");
+			System.out.println("O hospital mais próximo de você para doação é : \n Hospital Santa Marcelina -R. Harry Dannenberg ,473 \n Hospital Municipal do Tatuapé - Av. Celso Garcia, 4815 \n Hospital Municipal Professor Doutor Alípio Corrêa Netto- Alameda Rodrigo de Brum, 1989 ");
 		}
 		System.out.println("Deseja retornar ao menu?\n 1 - Sim \n2 - Não");
 		ret=leia.nextInt();
 		if(ret==1) {
-			
+
 			MenuInicial.menu();
 		}
 		else {
 			System.out.println("Saindo do programa................");
 		}
-		
+
 	}
 }

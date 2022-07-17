@@ -24,8 +24,8 @@ public class Login {
 			System.out.println("=========================  Login efetuado com sucesso =========================");
 			System.out.println("\n  Por favor, selecione uma opção:\n"
 					+ "1) Começar questionário \n"
-					+ "2) Ver estatísticas\n"
-					);
+					+ "2) Ver estatísticas\n");
+			
 			System.out.print("Opção selecionada: ");
 			opcao = leia.nextInt();
 
