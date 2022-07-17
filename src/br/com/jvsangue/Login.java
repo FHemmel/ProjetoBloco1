@@ -34,7 +34,7 @@ public class Login {
 				questionario.realizarQuestionario();
 				
 			}else if (opcao == 2){
-				Estatisticas.mostraEstatistica();
+				Estatisticas.mostraEstatistica(user);
 			}
 
 		}else 

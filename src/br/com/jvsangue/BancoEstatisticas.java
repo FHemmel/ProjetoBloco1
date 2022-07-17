@@ -4,9 +4,6 @@ public class BancoEstatisticas {
 	
 
 	public static void mostraEstGerais() {
-		System.out.println("========================================================");
-		System.out.println("==ESTATÃ�STICAS GERAIS SOBRE DOAÃ‡ÃƒO DE SANGUE NO BRASIL==");
-		System.out.println("========================================================");
 		System.out.println();
 		
 		System.out.println("VocÃª sabia que uma doaÃ§Ã£o de sangue pode salvar atÃ© 4 vidas? "
