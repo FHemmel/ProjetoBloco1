@@ -20,7 +20,7 @@ de poder ver quais os locais de doação mais próximos da pessoa.
 - Miro.
 
 ## 🔗 Links
-- Slides da apresentação
+- [Slides da apresentação](https://www.canva.com/design/DAFGnSKfw1o/wx6mS03qjPOBmg8SOdc_Bg/view?utm_content=DAFGnSKfw1o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - [Design](https://www.figma.com/file/qCDz8YK7gu7owAeQEVb9rd/JVSangue?node-id=0%3A1)
 - [Fluxograma](https://miro.com/app/board/uXjVOmDgYa0=/?share_link_id=264140798844)
 
