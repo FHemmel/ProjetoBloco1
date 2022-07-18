@@ -10,7 +10,7 @@ public class Usuario {
 	private int regiao;
 	private String usuario;
 	private String senha;
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -59,5 +59,5 @@ public class Usuario {
 	public void setGenero(String genero) {
 		this.genero = genero;
 	}
-	
+
 }
