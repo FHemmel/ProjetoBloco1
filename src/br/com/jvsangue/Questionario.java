@@ -3,6 +3,7 @@ package br.com.jvsangue;
 import java.util.Scanner;
 
 public class Questionario extends Cadastro{
+	
 
 private int genero, drogas, intervalo, continua, gravidez, periodo, parto, idade, doouAnteriormente, doencasPermanentes;
 	
@@ -11,11 +12,7 @@ private int genero, drogas, intervalo, continua, gravidez, periodo, parto, idade
 	private int p1,p2,p3,p4,p5,p7,ret;
 
 
-
-
 	Scanner leia =  new Scanner(System.in);
-
-	Usuario usu = new Usuario();
 
 	public void realizarQuestionario() {
 		System.out.println("Qual o seu gênero? \n 1 - Feminino, 2- Masculino, 3- Prefiro não informar. ");
@@ -185,10 +182,10 @@ private int genero, drogas, intervalo, continua, gravidez, periodo, parto, idade
 		System.out.println("================================================================");
 		System.out.println("=                          RESULTADOS                          =");
 		System.out.println("================================================================");
-		System.out.println("Nome: "+ usu.getNome() + "| Idade: "+idade+"| GÃªnero: "+genero+"| Peso: "+peso+"kg");
+		System.out.println("Nome: NOME " + "| Idade: "+idade+"| GÃªnero: "+genero+"| Peso: "+peso+"kg");
 		avisos();
-		
 	}
+	
 	
 	public void avisos() {
 		if(p1==1) {
@@ -212,9 +209,12 @@ private int genero, drogas, intervalo, continua, gravidez, periodo, parto, idade
 		if(p1==2 && p2==2 && p3==2 && p4==2 && p5==2 && p7==2) {
 			System.out.println("PARABÃ‰NS VOCÃŠ ESTÃ� APTX PARA FAZER A DOAÃ‡ÃƒO DE SANGUE");
 		}
-		Regiao();
+		//Regiao();
+		EnderecoProximo.mostraEndereco();
 	}
-	public void Regiao() {
+	
+	
+	/*public void Regiao() {
 		System.out.println("================================================================");
 		System.out.println("=                      PONTOS DE DOAÃ‡ÃƒO                        =");
 		System.out.println("================================================================");
@@ -246,8 +246,9 @@ private int genero, drogas, intervalo, continua, gravidez, periodo, parto, idade
 		}
 		else {
 			System.out.println("Saindo do programa................");
-		}
+		}*/
 
-	}
+		
 }
-}
+
+	

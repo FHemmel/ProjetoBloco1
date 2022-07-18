@@ -2,10 +2,16 @@ package br.com.jvsangue;
 
 import java.util.Scanner;
 
-public class EnderecoProximo{
-	public static void main(String[] args) {
+public class EnderecoProximo {
+	
+	static void mostraEndereco() {
 		int escolha;
 		Scanner input=new Scanner(System.in);
+		
+		System.out.println();
+		System.out.println("================================================================");
+		System.out.println("=                    POSTOS MAIS PR�XIMOS                      =");
+		System.out.println("================================================================");
 		
 		System.out.println("Digite:");
 		System.out.println("1- Região Norte");
@@ -14,6 +20,8 @@ public class EnderecoProximo{
 		System.out.println("4- Região Oeste");
 		System.out.println("5- Região Central");
 		System.out.println("6- Não sei minha região");
+		
+		
 		escolha=input.nextInt();
 		
 		switch(escolha) {
@@ -149,13 +157,28 @@ public class EnderecoProximo{
 			System.out.println("Opção Inválida!");
 		}
 		
+		System.out.println();
+		System.out.println("Deseja retornar ao menu principal?");
+		System.out.println("(1) Sim");
+		System.out.println("(2) Não");
+		char opcao2 = input.next().charAt(0);
+		
+		switch (opcao2) {
+		case '1':
+			MenuInicial.menu();
+			break;
+		case '2':
+			System.out.println("Você saiu do programa.");
+			System.exit(0);
+			break;
+		}
+		
 		
 input.close();
 	}
-	
+}
 	
 
-	}
 	
 	
 	
