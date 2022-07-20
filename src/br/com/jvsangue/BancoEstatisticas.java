@@ -3,7 +3,7 @@ package br.com.jvsangue;
 public class BancoEstatisticas {
 	
 
-	public static void mostraEstGerais() {
+	public void mostraEstGerais() {
 		System.out.println();
 		
 		System.out.println("Você sabia que uma doação de sangue pode salvar até 4 vidas? "
@@ -27,7 +27,7 @@ public class BancoEstatisticas {
 				+ "\nque puder!");
 	}
 	
-	public static void mostraAPositivo() {
+	public void mostraAPositivo() {
 		System.out.println("Você pode doar para pessoas com sangue AB+ e A+, e pode receber sangue de pessoas "
 				+ "A+, A-, O+ e O-. De acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue A+ "
 				+ "\nestá ESTÁVEL no momento, ufa! Mas não significa que ficará assim para sempre, então responda "
@@ -35,47 +35,47 @@ public class BancoEstatisticas {
 	}
 	
 	
-	public static void mostraANegativo() {
+	public void mostraANegativo() {
 		System.out.println("Você pode doar para pessoas com sangue A+, A-, AB+ e AB-, e pode receber sangue "
                 + "\nde pessoas A- e O-. De acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue "
                 + "\nA- está EM ALERTA, então que tal responder o questionário para saber se você pode doar?");
 	}
 	
-	public static void mostraBPositivo() {
+	public void mostraBPositivo() {
 		System.out.println("Você pode doar para pessoas com sangue B+ e AB+, e pode receber sangue de pessoas "
                 + "\nB+, B-, O+ e O-. De acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue B+ "
                 + "\nestá ESTÁVEL no momento, ufa! Mas não significa que ficará assim para sempre, então responda "
                 + "\nnosso questionário para saber se você pode ser doador.");
 	}
 	
-	public static void mostraBNegativo() {
+	public void mostraBNegativo() {
 		System.out.println("Você pode doar para pessoas com sangue B+, B-, AB+ e AB-, e pode receber de pessoas "
                 + "\nB- e O-. De acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue B- está "
                 + "\nEM ESTADO CRÍTICO, portanto vamos agilizar seu questionário para que você possa saber se "
                 + "\npode doar!");
 	}
 	
-	public static void mostraABPositivo() {
+	public void mostraABPositivo() {
 		System.out.println("Você só pode doar para pessoas com sangue AB+, mas pode receber de todos os outros "
                 + "\ntipos sanguíneos, por isso é conhecido como receptor universal. De acordo com o hemocentro "
                 + "\nPró-Sangue de São Paulo, o estoque de sangue AB+ está ESTÁVEL no momento, ufa! Mas não significa "
                 + "\nque ficará assim para sempre, então responda nosso questionário para saber se você pode ser doador.");
 	}
 	
-	public static void mostraABNegativo() {
+	public void mostraABNegativo() {
 		System.out.println("Você pode doar para pessoas com sangue AB+ e AB-, e pode receber de pessoas "
                 + "\nA-, B-, O- e AB-. De acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue "
                 + "\nAB- está ESTÁVEL no momento, ufa! Mas não significa que ficará assim para sempre, "
                 + "\nentão responda nosso questionário para saber se você pode ser doador.");
 	}
 	
-	public static void mostraOPositivo() {
+	public void mostraOPositivo() {
 		System.out.println("Você pode doar para pessoas com sangue A+, B+, O+ e AB+, e pode receber de pessoas O+ e O-. "
                 + "\nDe acordo com o hemocentro Pró-Sangue de São Paulo, o estoque de sangue O+ está "
                 + "\nEM ESTADO CRÍTICO, portanto vamos agilizar seu questionário para que você possa saber se pode doar!");
 	}
 	
-	public static void mostraONegativo() {
+	public void mostraONegativo() {
 		System.out.println("Você pode doar para pessoas com todos os tipos sanguíneos e é conhecido como doador universal,"
                 + "\nmas só pode receber de pessoas com sangue O-. De acordo com o hemocentro Pró-Sangue de São Paulo, o "
                 + "\nestoque de sangue O- está EM ESTADO CRÍTICO, portanto vamos agilizar seu questionário para que você "

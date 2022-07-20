@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class EnderecoProximo {
 	
-	static void mostraEndereco() {
+	public void mostraEndereco() {
 		int escolha;
 		Scanner input=new Scanner(System.in);
 		
@@ -218,7 +218,8 @@ public class EnderecoProximo {
 		
 		switch (opcao2) {
 		case '1':
-			MenuInicial.menu();
+			MenuInicial menu = new MenuInicial();
+			menu.menu();
 			break;
 		case '2':
 			System.out.println("Você saiu do programa.");

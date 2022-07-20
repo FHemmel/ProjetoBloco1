@@ -37,7 +37,8 @@ public class Questionario extends Cadastro{
 			continua = leia.nextInt();
 			if (continua == 2) {
 
-				MenuInicial.menu();
+				MenuInicial menu = new MenuInicial();
+				menu.menu();
 			}
 			questionarioPermanente();
 		}
@@ -53,8 +54,9 @@ public class Questionario extends Cadastro{
 					+ "\n Deseja continuar respondendo o questionário ?  \n 1) Sim 2) Não");
 			continua = leia.nextInt();
 			if (continua == 2) {
-
-				MenuInicial.menu();
+				
+				MenuInicial menu = new MenuInicial();
+				menu.menu();
 			}
 		}
 		System.out.println("Você esteve em período gestacional nos últimos 12 meses? \n 1) Sim 2) Não");
@@ -71,8 +73,9 @@ public class Questionario extends Cadastro{
 						+ " \nDeseja continuar respondendo? 1) Sim 2) Não");
 				continua = leia.nextInt();	
 				if (continua == 2) {
-
-					MenuInicial.menu();
+					
+					MenuInicial menu = new MenuInicial();
+					menu.menu();
 				}
 			}
 		}
@@ -85,8 +88,9 @@ public class Questionario extends Cadastro{
 					+ "\nDeseja continuar respondendo o questionário? \n 1) Sim 2) Não ");
 			continua = leia.nextInt();
 			if(continua == 2) {
-
-				MenuInicial.menu();
+				
+				MenuInicial menu = new MenuInicial();
+				menu.menu();
 
 			}
 		}
@@ -101,14 +105,16 @@ public class Questionario extends Cadastro{
 		if (idade < 16 || idade > 69 ){
 			System.out.println("A faixa de idade apta a realizar a doação é de 16 a 69 anos. "
 					+ "\nInfelizmente você não está apte a realizar a doação.");
-			MenuInicial.menu();
+			MenuInicial menu = new MenuInicial();
+			menu.menu();
 		}
 		else if (idade>=60 && idade<=69) {
 			System.out.println("Você já doou sangue anteriormente? \n 1) Sim 2) Não");	
 			doouAnteriormente = leia.nextInt();
 			if(doouAnteriormente == 2) {
 				System.out.println("Infelizmente você não está apte a realizar a doação. ");
-				MenuInicial.menu();
+				MenuInicial menu = new MenuInicial();
+				menu.menu();
 			}
 		}
 		System.out.println("Qual o seu peso? ");
@@ -116,8 +122,8 @@ public class Questionario extends Cadastro{
 		if (peso < 50.0) {
 			System.out.println("Para realizar a doação precisa ter 50kg ou mais. "
 					+ "\nInfelizmente você não está apte a realizar a doação.");
-
-			MenuInicial.menu();
+			MenuInicial menu = new MenuInicial();
+			menu.menu();
 		}
 		System.out.println("Você teve alguma dessas doenças listadas abaixo:"
 				+ "\nHepatite após os 11 anos "
@@ -129,7 +135,8 @@ public class Questionario extends Cadastro{
 		doencasPermanentes = leia.nextInt();		
 		if (doencasPermanentes == 1) {
 			System.out.println("Infelizmente você não poderá realizar a doação de sangue.");
-			MenuInicial.menu();
+			MenuInicial menu = new MenuInicial();
+			menu.menu();
 		}
 		System.out.println("Você já fez uso de drogas ilícitas injetáveis? ou "
 				+ " \nTem piercing em cavidade oral ou região genital? "
@@ -137,7 +144,8 @@ public class Questionario extends Cadastro{
 		drogas = leia.nextInt();
 		if (drogas == 1) {
 			System.out.println("Infelizmente você não poderá realizar a doação de sangue.");
-			MenuInicial.menu();
+			MenuInicial menu = new MenuInicial();
+			menu.menu();
 		}
 		questionarioTemporario();
 	}
@@ -216,7 +224,8 @@ public class Questionario extends Cadastro{
 		if(p1==2 && p2==2 && p3==2 && p4==2 && p5==2 && p7==2) {
 			System.out.println("PARABÉNS VOCÊ ESTÁ APTE PARA FAZER A DOAÇÃO DE SANGUE!");
 		}
-		EnderecoProximo.mostraEndereco();
+		EnderecoProximo endPro = new EnderecoProximo();
+		endPro.mostraEndereco();
 	}
 }
 

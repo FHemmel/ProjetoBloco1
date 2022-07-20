@@ -4,21 +4,14 @@ import java.util.Scanner;
 
 public class Estatisticas extends BancoEstatisticas {
 
-	Cadastro usu;
 
-	public Estatisticas(Cadastro usu) {
-		super();
-		this.usu = usu;
-	}
-
-
-	public static void mostraEstatistica(String nome) {
+	public void mostraEstatistica() {
 
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("\n================================ ESTATÍSTICAS =================================\n");
 		System.out.println();
-		System.out.println("Olá, " + nome + "! Aqui estão algumas estatísticas sobre doação de sangue."
+		System.out.println("Olá, " + "Amanda" + "! Aqui estão algumas estatísticas sobre doação de sangue."
 				+ "\nAo final você terá a opção de saber mais sobre seu tipo sanguíneo. Vamos lá? ");
 
 		mostraEstGerais();
@@ -78,7 +71,8 @@ public class Estatisticas extends BancoEstatisticas {
 
 		switch (opcao2) {
 		case '1':
-			MenuInicial.menu();
+			MenuInicial menu = new MenuInicial();
+			menu.menu();
 			break;
 		case '2':
 			System.out.println("Você saiu do programa.");

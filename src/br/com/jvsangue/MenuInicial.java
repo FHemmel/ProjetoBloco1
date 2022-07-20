@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MenuInicial {
 
-	public static void menu() {
+	public void menu() {
 
 		System.out.println("\n******************************** MENU INICIAL *********************************");
 		System.out.println("\n========================  Seja bem-vinde ao JVSangue!! "
@@ -23,12 +23,14 @@ public class MenuInicial {
 		opcao = leia.nextInt();
 
 		if(opcao == 1) {
-
-			Login.login();
+			
+			Cadastro cad = new Cadastro();
+			cad.login();
 
 		}else if(opcao == 2) {
-
-			Cadastro.cadastrando();
+			
+			Cadastro cad = new Cadastro();
+			cad.cadastrando();
 		}
 
 		leia.close();
